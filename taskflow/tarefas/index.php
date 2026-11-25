@@ -38,7 +38,7 @@ require '../includes/header.php'; ?>
                     <td><?= $t['prioridade'] ?></td>
                     <td><?= $t['status'] ?></td>
                     <td><a class="btn gray" href="form.php?id=<?= $t['id'] ?>">Editar</a> <a class="btn red"
-                            href="excluir.php?id=<?= $t['id'] ?>">Excluir</a></td>
+                            href="excluir.php?id=<?= $t['id'] ?>" onclick="return confirm('Deseja realmente excluir esta tarefa?')">Excluir</a></td>
                 </tr><?php endforeach; ?>
         </table>
     </div>
